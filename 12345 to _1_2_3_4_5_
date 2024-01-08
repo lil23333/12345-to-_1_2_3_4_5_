@@ -1,0 +1,10 @@
+function range (st, end ) {
+    return Array(end - st + 1).fill().map((_,idx)=> st + idx)
+}
+
+let arr = range (1, 5);
+console.log(arr);
+let str = arr.join('_');
+
+str = '_' + str + '_';
+console.log(str);
